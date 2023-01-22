@@ -106,7 +106,7 @@ const OurEngineer = () => {
           </div>
         </div>
 
-        <div className="col-12 col-lg-3">
+        <div className="col-11 col-lg-3">
           <div className="card Engineer" style={{ maxWidth: "100%" }}>
             <img
               class="card-img-top Engineer-img  "

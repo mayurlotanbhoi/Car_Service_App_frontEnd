@@ -1,0 +1,118 @@
+import React from "react";
+
+const Form = () => {
+  let state = [
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Goa",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jammu and Kashmir",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttarakhand",
+    "Uttar Pradesh",
+    "West Bengal",
+    "Andaman and Nicobar Islands",
+    "Chandigarh",
+    "Dadra and Nagar Haveli",
+    "Daman and Diu",
+    "Delhi",
+    "Lakshadweep",
+    "Puducherry",
+  ];
+  return (
+    <div>
+      <form>
+        <div class="form-row">
+          <div class="form-group ">
+            <label for="inputEmail4">Email</label>
+            <input
+              type="email"
+              class="form-control "
+              id="inputEmail4"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group ">
+            <label for="inputPassword4">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword4"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              {state.map((state) => {
+                return <option>{state}</option>;
+              })}
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Pincod</label>
+            <input type="number" class="form-control" id="inputZip" />
+          </div>
+        </div>
+        {/* <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div> */}
+        <button type="submit" class="btn btn-primary">
+          Registar
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default Form;

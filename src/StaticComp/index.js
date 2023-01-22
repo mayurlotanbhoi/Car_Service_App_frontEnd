@@ -1,0 +1,12 @@
+export { default as TopBar } from "./TopBar";
+export { default as NavBar } from "./NavBar";
+export { default as Home } from "./HomeImg";
+export { default as About } from "./About";
+export { default as WhatWeDo } from "./WhatWeDo";
+export { default as ServiceTastion } from "./Service";
+export { default as Plane } from "./Plance";
+export { default as OurEngineer } from "./OurEngineer";
+export { default as Officess } from "./Offeces";
+export { default as Form } from "../DynamicComp/Form";
+export { default as Fotter } from "./Footer";
+export { default as CarLogo } from "./CarLogo";

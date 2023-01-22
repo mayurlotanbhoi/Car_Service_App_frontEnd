@@ -7,7 +7,7 @@ import team_4 from "../assets/team-4.jpg";
 
 const OurEngineer = () => {
   return (
-    <div className=" plance container text-center ">
+    <div className="  container text-center ">
       <div className="">
         {" "}
         <h3 className="page-top-heading">MEET OUR TEAM</h3>
@@ -15,7 +15,7 @@ const OurEngineer = () => {
       </div>
 
       <div className="row">
-        <div className="col-12 col-lg-3  ">
+        <div className="col-11 col-lg-3  ">
           <div className="card Engineer" style={{ maxWidth: "100%" }}>
             <img
               class="card-img-top Engineer-img  "
@@ -45,7 +45,7 @@ const OurEngineer = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-lg-3">
+        <div className="col-11 col-lg-3">
           <div className="card Engineer" style={{ maxWidth: "100%" }}>
             <img
               class="card-img-top Engineer-img  "
@@ -75,7 +75,7 @@ const OurEngineer = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-lg-3">
+        <div className="col-11 col-lg-3">
           <div className="card Engineer" style={{ maxWidth: "100%" }}>
             <img
               class="card-img-top Engineer-img  "

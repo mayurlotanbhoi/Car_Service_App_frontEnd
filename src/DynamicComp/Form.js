@@ -167,11 +167,14 @@ const Form = () => {
       return;
     }
     console.log(formData);
-    const res = await fetch("http://localhost:5000/user/registation", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    const res = await fetch(
+      "https://car-service-api.onrender.com/user/registation",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      }
+    );
     const reData = await res.json();
     if (res.status === 201) {
       swal(`${reData.masseg}`, "Please Login!", "success");

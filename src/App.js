@@ -22,21 +22,20 @@ import { Shops, Login, Registation } from "./DynamicComp";
 import FrontHomePage from "./FrontHomePage";
 
 function App() {
-  // useEffect(() => {
-  //   async function fettchuser() {
-  //     const res = await fetch("http://localhost:5000/user", {
-  //       // method: "get",
-  //       // headers: { "Content-Type": "application/json" },
-  //       method: "GET",
-  //       credentials: "same-origin",
-  //       // body: JSON.stringify(formData),
-  //     });
-  //     const reData = await res.json();
-
-  //     console.log(reData);
-  //   }
-  //   fettchuser();
-  // });
+  useEffect(() => {
+    async function fettchuser() {
+      const res = await fetch("https://car-service-api.onrender.com/user", {
+        // method: "get",
+        // headers: { "Content-Type": "application/json" },
+        method: "GET",
+        credentials: "include",
+        // body: JSON.stringify(formData),
+      });
+      const reData = await res.json();
+      console.log(reData);
+    }
+    fettchuser();
+  }, []);
 
   return (
     <>

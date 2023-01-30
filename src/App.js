@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,12 +14,30 @@ import {
   OurEngineer,
   Officess,
   Fotter,
+  AddShop,
+  AddServices,
 } from "./StaticComp";
 
 import { Shops, Login, Registation } from "./DynamicComp";
 import FrontHomePage from "./FrontHomePage";
 
 function App() {
+  // useEffect(() => {
+  //   async function fettchuser() {
+  //     const res = await fetch("http://localhost:5000/user", {
+  //       // method: "get",
+  //       // headers: { "Content-Type": "application/json" },
+  //       method: "GET",
+  //       credentials: "same-origin",
+  //       // body: JSON.stringify(formData),
+  //     });
+  //     const reData = await res.json();
+
+  //     console.log(reData);
+  //   }
+  //   fettchuser();
+  // });
+
   return (
     <>
       <TopBar />
@@ -35,6 +54,8 @@ function App() {
           <Route path="/Officess" element={<Officess />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Registation" element={<Registation />} />
+          <Route path="/Add-your-shop" element={<AddShop />} />
+          <Route path="/Add-Services" element={<AddServices />} />
         </Routes>
 
         {/* <Home />

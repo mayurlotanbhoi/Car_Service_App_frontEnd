@@ -1,8 +1,15 @@
 import React from "react";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+  const navigation = useNavigate();
+
+  const DropWonNav = (e) => {
+    console.log(e.target.value);
+    console.log("working");
+    navigation(e.target.value);
+  };
   return (
     <div className="container-fluid NavBg  fixed-top ">
       <nav className="navbar navbar-expand-lg  m-5 ">
@@ -52,6 +59,40 @@ const NavBar = () => {
                 <NavLink className="nav-NavLink" to="/Officess">
                   Office
                 </NavLink>
+              </li>
+              <li>
+                <select
+                  style={{
+                    background: "#202c45",
+                    color: "white",
+                    border: "none",
+                  }}
+                  onChange={(e) => {
+                    DropWonNav(e);
+                  }}
+                >
+                  <option value="/">
+                    <NavLink className="nav-NavLink">
+                      Your Orders And Shops
+                    </NavLink>
+                  </option>
+
+                  <option value="/Add-your-shop">
+                    <NavLink className="nav-NavLink">Add your shop</NavLink>
+                  </option>
+
+                  <option>
+                    <NavLink className="nav-NavLink" to="/Officess">
+                      see Your booking
+                    </NavLink>
+                  </option>
+
+                  <option value="Add-Services">
+                    <NavLink className="nav-NavLink" to="/Officess">
+                      Add Your Services
+                    </NavLink>
+                  </option>
+                </select>
               </li>
             </ul>
             <span className="navbar-text">

@@ -2,6 +2,13 @@
   
 /* TopBar */
 
+.alerttoat{
+        width: 100vw;
+        height: 80px;
+        position: absolute;
+        z-index: 100000;
+}
+
 .home-nav{
         background-color: #E81C2E;
         color: white;
@@ -462,6 +469,7 @@ border: 2px solid white;
 color: aliceblue;
 font-size: larger;   
     }
+
     .request-form-div{
         background-color: #E81C2E;
         border-radius: 20px;
@@ -481,6 +489,12 @@ font-size: larger;
     .form-description{
         height: 150px;
        
+    }
+
+    .form_Error{
+        color: #E81C2E;
+        font-size: 13px;
+       letter-spacing: 2px;
     }
 
     /* <---  */

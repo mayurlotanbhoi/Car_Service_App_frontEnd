@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HomeBg from "../assets/car-repairing-services-1.jpg";
 
 const HomeImg = () => {
+  useEffect(() => {
+    async function fettchuser() {
+      const res = await fetch("http://localhost:5000/user", {
+        // method: "get",
+        // headers: { "Content-Type": "application/json" },
+        method: "GET",
+        credentials: "include",
+        // body: JSON.stringify(formData),
+      });
+      const reData = await res.json();
+      console.log(reData);
+    }
+    fettchuser();
+  });
+
   return (
     <div
       className=" container-fluid Home-img"

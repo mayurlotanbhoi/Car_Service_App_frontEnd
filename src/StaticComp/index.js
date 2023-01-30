@@ -10,3 +10,5 @@ export { default as Officess } from "./Offeces";
 export { default as Form } from "../DynamicComp/Form";
 export { default as Fotter } from "./Footer";
 export { default as CarLogo } from "./CarLogo";
+export { default as AddShop } from "./AddYouShop";
+export { default as AddServices } from "./Add_Services";

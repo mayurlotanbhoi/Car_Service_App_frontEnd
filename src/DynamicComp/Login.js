@@ -52,6 +52,7 @@ const Login = () => {
     const res = await fetch("https://car-service-api.onrender.com/user/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
+      credentials: "include",
       body: JSON.stringify(data),
     });
     const reData = await res.json();

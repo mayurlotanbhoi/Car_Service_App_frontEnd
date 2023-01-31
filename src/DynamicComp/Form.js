@@ -167,6 +167,8 @@ const Form = () => {
       return;
     }
     console.log(formData);
+    // "https://car-service-api.onrender.com/user/registation",
+    // "http://localhost:5000/user/registation"
     const res = await fetch(
       "https://car-service-api.onrender.com/user/registation",
       {
